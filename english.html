@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>English Literature Project</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
+      color: #ffffff;
+      background-image: url('https://www.transparenttextures.com/patterns/book-cover.png');
+      background-blend-mode: overlay;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 3rem 1rem;
+    }
+
+    .container {
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(16px);
+      border-radius: 20px;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.7);
+      max-width: 960px;
+      width: 100%;
+      padding: 3rem 2rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .container::before {
+      content: "";
+      position: absolute;
+      top: -50px;
+      left: -50px;
+      width: 200px;
+      height: 200px;
+      background: radial-gradient(circle, #4a90e2, transparent 70%);
+      opacity: 0.2;
+      z-index: 0;
+    }
+
+    .header {
+      text-align: center;
+      position: relative;
+      z-index: 1;
+      margin-bottom: 2.5rem;
+    }
+
+    .header h1 {
+      font-size: 3rem;
+      background: linear-gradient(to right, #f8e71c, #4a90e2);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .slogan {
+      font-size: 1.3rem;
+      color: #d0d0d0;
+      margin-top: 0.5rem;
+    }
+
+    .divider {
+      height: 2px;
+      width: 80%;
+      background: linear-gradient(to right, #ffffff30, #ffffff05);
+      margin: 2rem auto;
+      border-radius: 5px;
+    }
+
+    .section {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 1rem;
+      position: relative;
+      z-index: 1;
+      margin-bottom: 2rem;
+    }
+
+    .section button {
+      background: #202020;
+      color: #fff;
+      border: none;
+      padding: 0.9rem 1.2rem;
+      font-size: 1rem;
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .section button:hover {
+      background: #4a90e2;
+      transform: translateY(-3px);
+    }
+
+    @media (max-width: 600px) {
+      .header h1 {
+        font-size: 2rem;
+      }
+
+      .slogan {
+        font-size: 1rem;
+      }
+
+      .section {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>English Literature Project</h1>
+      <div class="slogan">Exploring the Depth of Words</div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="section">
+      <button onclick="location.href='page1.html'">Shakespeare</button>
+      <button onclick="location.href='page2.html'">Poetry</button>
+      <button onclick="location.href='page3.html'">Novels</button>
+      <button onclick="location.href='page4.html'">Drama</button>
+      <button onclick="location.href='page5.html'">Grammar</button>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="section">
+      <button onclick="location.href='index.html'">Home</button>
+      <button onclick="location.href='learn-more.html'">Learn More</button>
+      <button onclick="location.href='about.html'">About</button>
+      <button onclick="location.href='contact.html'">Contact Us</button>
+    </div>
+  </div>
+</body>
+</html>
